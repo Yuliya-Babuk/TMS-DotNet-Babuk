@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Homework_2
+namespace DateHandler
 {
     class Program
     {
@@ -10,7 +10,10 @@ namespace Homework_2
 
             var Date = Convert.ToDateTime(Console.ReadLine());
 
+           
             Console.WriteLine(Date.DayOfWeek);
+
+           
 
         }
     }
