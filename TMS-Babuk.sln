@@ -1,4 +1,3 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
@@ -7,10 +6,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework 0", "src\Homework 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework 1", "src\Homework-2\Homework 1.csproj", "{D9B4895D-BAF0-46E9-A2B2-6636DE3EF095}"
 EndProject
-Homework-3
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework 3", "src\Homework 3\Homework 3.csproj", "{AF6BCFCB-5B7F-40F5-998D-C298AFDB383A}"
-=======
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework 2", "src\Homework 2 new\Homework 2.csproj", "{2330BC04-D17D-4A17-B09E-CD8659C6D26B}" main
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework 3", "src\Homework 3\Homework 3.csproj", "{AF6BCFCB-5B7F-40F5-998D-C298AFDB383A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework 2", "src\Homework 2 new\Homework 2.csproj", "{2330BC04-D17D-4A17-B09E-CD8659C6D26B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnessTracker", "src\FitnessTracker\FitnessTracker.csproj", "{9CFFFA87-911E-4C9C-8A82-B2629314A666}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,7 +26,6 @@ Global
 		{D9B4895D-BAF0-46E9-A2B2-6636DE3EF095}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9B4895D-BAF0-46E9-A2B2-6636DE3EF095}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9B4895D-BAF0-46E9-A2B2-6636DE3EF095}.Release|Any CPU.Build.0 = Release|Any CPU
-Homework-3
 		{AF6BCFCB-5B7F-40F5-998D-C298AFDB383A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AF6BCFCB-5B7F-40F5-998D-C298AFDB383A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF6BCFCB-5B7F-40F5-998D-C298AFDB383A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,7 +34,10 @@ Homework-3
 		{2330BC04-D17D-4A17-B09E-CD8659C6D26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2330BC04-D17D-4A17-B09E-CD8659C6D26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2330BC04-D17D-4A17-B09E-CD8659C6D26B}.Release|Any CPU.Build.0 = Release|Any CPU
-main
+		{9CFFFA87-911E-4C9C-8A82-B2629314A666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CFFFA87-911E-4C9C-8A82-B2629314A666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CFFFA87-911E-4C9C-8A82-B2629314A666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CFFFA87-911E-4C9C-8A82-B2629314A666}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
