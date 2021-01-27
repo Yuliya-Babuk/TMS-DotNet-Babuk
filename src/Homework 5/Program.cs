@@ -12,7 +12,7 @@ namespace ATM_Managment
         public void AddFunds(decimal _count)
         {
             _balance += _count;
-            BalanceHandler?.Invoke(_balance, "deposite");
+            BalanceHandler?.Invoke(_balance, "deposit");
         }
         public void WithdrawFunds(decimal _count)
         {
@@ -35,16 +35,27 @@ namespace ATM_Managment
 
     class Program
     {
+
+        // declaring method inside method(local function) is quite a new feature,
+        // so it should be used when it is really needed, this method can be declared as part of the Program class,
+        // it will improve code readability
+
+        static void ActionInfo(decimal balance, string action)
+        {
+            Console.WriteLine($"You made a {action} transaction. Your balance is {balance} BYN");
+        }
         static void Main(string[] args)
         {
             ATM atm = new ATM();
             bool exit = false;
+            atm.BalanceHandler += ActionInfo;
+          
             while (!exit)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Hello! \nPlease select an operation:\nA - to add funds, \nW - to withdraw funds, \nB - to show a balance, \nE - to exit\n");
                 Console.ResetColor();
-                atm.BalanceHandler += ActionInfo;
+
 
                 switch (Console.ReadLine().ToUpper())
                 {
@@ -68,11 +79,6 @@ namespace ATM_Managment
                         Console.WriteLine("Enter correct operation:");
                         break;
                 }
-                static void ActionInfo(decimal balance, string action)
-                {
-                    Console.WriteLine($"You made a {action} transaction. Your balance is {balance} BYN");
-                }
-                atm.BalanceHandler -= ActionInfo;
             }
         }
     }
